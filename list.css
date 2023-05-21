@@ -1,0 +1,155 @@
+body{
+
+    background-color:rgb(44, 44, 44);
+    font-family: 'Poppins', sans-serif;
+
+    color: yellow;
+    position: relative;
+    font-size: large;
+    user-select: none;
+    
+
+}
+
+h1{
+    font-size:x-large;
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 40px;
+}
+
+
+img{
+    mix-blend-mode: lighten;
+    width: 40%;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    animation-name: trolley;
+    animation-delay: 2s;
+    animation-duration: 11s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    width: 50px;
+    height: 50px;
+    position: relative;  
+    user-select: none;
+}
+img:hover{
+    width: 70px;
+    height: 60px;
+    transition-duration: 1s;
+}
+
+@keyframes trolley{
+    0% {left: 0px; top:0px}
+    100% {left: 250px; top: 0px;}
+
+}
+
+@keyframes example {
+    from {background-color: yellow}
+    to {background-color: rgb(255, 255, 255);}
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 25%;
+    
+    
+  }
+  button{
+    font-family: 'Poppins', sans-serif;
+    font-weight:bolder;
+    font-size: 100%;
+    background-color:yellow;
+    color:rgb(44, 44, 44);
+    border: 0;
+    border-radius: 20px;
+    margin: auto;
+    text-align: center;
+    padding: 8px;
+    cursor: pointer;
+  }
+
+  button:hover{
+    background-color:rgb(44, 44, 44) ;
+    color: yellow;
+    border: yellow solid 1px;
+    border-radius: 15px;
+    margin: 0px;
+    text-align: center;
+    transition-duration: 1s;
+    
+  }
+  input{
+   
+    border-radius: 20px;
+    font-size:large;
+    padding: 15px;
+    border-style: none;
+    border: solid yellow 3px;
+    color: rgb(44, 44, 44);
+    animation-timing-function:cubic-bezier(0.25, 0.40, 0.65, 0.94);
+    animation-name: example;
+    animation-duration: 12s;
+    height: 7px;
+    position: relative;
+    animation-iteration-count: 1;
+  }
+  
+
+  input:hover{
+    height: 20px;
+    transition-duration: 1.5s;
+  }
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    width: 100%;
+    position: relative; 
+    padding: 0px; 
+    height: fit-content;
+    margin-bottom: 50px;
+   
+    
+     
+
+
+  }
+  li{
+    list-style: none;
+    border: 1px yellow solid;
+    border-radius: 15px;
+    text-align: center;
+    width:auto;
+    overflow:hidden;
+    padding: 10px;
+    margin: 1px;
+    flex-grow: 1;
+    cursor:pointer;
+  }
+
+  li:hover{
+    background-color: yellow;
+    color:rgb(44, 44, 44) ;
+    font-weight:bolder;
+  }
+  footer{
+    text-align: center;
+    font-size: 0.65em;
+    animation-name: footer;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+    color: rgb(44, 44, 44) ;
+
+    
+  }
+    @keyframes footer{
+        from {color: yellow}
+       to {color: rgb(44, 44, 44) ;}
+    }
+
+
